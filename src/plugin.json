@@ -1,0 +1,29 @@
+{
+  "type": "panel",
+  "name": "Sprout Panel Plugin Template",
+  "id": "myorgid-simple-panel",
+
+  "info": {
+    "description": "Sprout Panel Plugin Template",
+    "author": {
+      "name": "Your Name"
+    },
+    "keywords": ["panel", "template"],
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "links": [
+      {"name": "Website", "url": "https://github.com/savantly/simple-sprout-panel"},
+      {"name": "License", "url": "https://github.com/savantly/simple-sprout-panel/blob/master/LICENSE"}
+    ],
+    "screenshots": [],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+
+  "dependencies": {
+    "sproutVersion": "2.0.x",
+    "plugins": []
+  }
+}
