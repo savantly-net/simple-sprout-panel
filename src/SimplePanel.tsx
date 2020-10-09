@@ -9,6 +9,8 @@ interface Props extends PanelProps<SimpleOptions> {}
 export const SimplePanel: React.FC<Props> = ({ options, width, height }) => {
   const theme = useTheme();
   const styles = getStyles();
+  const example = 'Hello World';
+
   return (
     <div
       className={cx(
@@ -33,13 +35,13 @@ export const SimplePanel: React.FC<Props> = ({ options, width, height }) => {
       </svg>
 
       <div className={styles.textBox}>
-        {options.showSeriesCount && (
+        {options.showMessage && (
           <div
             className={css`
-              font-size: ${theme.typography.size[options.seriesCountSize]};
+              font-size: ${theme.typography.size[options.messageSize]};
             `}
           >
-            Number of series: {data.series.length}
+            {example}
           </div>
         )}
         <div>Text option value: {options.text}</div>

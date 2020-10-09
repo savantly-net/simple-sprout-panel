@@ -11,14 +11,14 @@ export const plugin = new PanelPlugin<SimpleOptions>(SimplePanel).setPanelOption
       defaultValue: 'Default value of text input option',
     })
     .addBooleanSwitch({
-      path: 'showSeriesCount',
-      name: 'Show series counter',
+      path: 'showMessage',
+      name: 'Show message',
       defaultValue: false,
     })
     .addRadio({
-      path: 'seriesCountSize',
+      path: 'messageSize',
       defaultValue: 'sm',
-      name: 'Series counter size',
+      name: 'Message size',
       settings: {
         options: [
           {
@@ -35,6 +35,6 @@ export const plugin = new PanelPlugin<SimpleOptions>(SimplePanel).setPanelOption
           },
         ],
       },
-      showIf: config => config.showSeriesCount,
+      showIf: config => config.showMessage,
     });
 });

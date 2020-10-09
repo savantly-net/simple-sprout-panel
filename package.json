@@ -16,9 +16,12 @@
     "email": "bug@savantly.net"
   },
   "devDependencies": {
+    "@grafana/eslint-config": "^2.0.1",
     "@savantly/sprout-api": "0.0.1",
     "@savantly/sprout-toolkit": "0.0.1",
     "@savantly/sprout-ui": "0.0.1",
+    "@types/jest": "^26.0.14",
+    "@types/react": "^16.9.0",
     "emotion": "10.0.27"
   },
   "engines": {
